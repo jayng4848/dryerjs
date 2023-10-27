@@ -92,7 +92,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "lint-staged --allow-empty"
+      "pre-push": [
+        "npm run lint",
+        "npm run format",
+        "npm run cspell",
+        "git add .",
+        "git commit -m 'chore: lint-staged'"
+      ]
     }
   },
   "lint-staged": {
