@@ -15,7 +15,7 @@ describe('Auth Resolver works', () => {
   });
 
   it('signUp works', async () => {
-    const signUpResponse = await server.makeSuccessRequest({
+      const signUpResponse = await server.makeSuccessRequest({
       query: `
       mutation SignUp($input: CreateUserInput!) {
         signUp(input: $input) {
