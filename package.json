@@ -90,11 +90,6 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint && npm run format && npm run cspell && git add . && git commit -m 'chore: lint-staged'"
-    }
-  },
   "lint-staged": {
     "*.ts": [
       "npm run lint",
