@@ -11,11 +11,11 @@ describe('Auth Resolver works', () => {
   let user;
 
   beforeAll(async () => {
-      await server.start();
+    await server.start();
   });
 
   it('signUp works', async () => {
-      const signUpResponse = await server.makeSuccessRequest({
+    const signUpResponse = await server.makeSuccessRequest({
       query: `
       mutation SignUp($input: CreateUserInput!) {
         signUp(input: $input) {
