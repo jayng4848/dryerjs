@@ -11,7 +11,7 @@ describe('Auth Resolver works', () => {
     let user;
 
   beforeAll(async () => {
-        await server.start();
+      await server.start();
   });
 
   it('signUp works', async () => {

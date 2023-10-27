@@ -92,7 +92,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint-staged --allow-empty"
+      "pre-push": "lint-staged --allow-empty"
     }
   },
   "lint-staged": {
