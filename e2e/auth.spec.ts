@@ -10,9 +10,9 @@ const server = TestServer.init({
 describe('Auth Resolver works', () => {
       let user;
 
-  beforeAll(async () => {
-        await server.start();
-  });
+      beforeAll(async () => {
+            await server.start();
+      });
 
   it('signUp works', async () => {
     const signUpResponse = await server.makeSuccessRequest({
