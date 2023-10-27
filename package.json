@@ -95,8 +95,7 @@
       "npm run lint",
       "npm run format",
       "npm run cspell",
-      "git add .",
-      "git commit -m 'chore: lint-staged'"
+      "git add ."
     ]
   }
 }
